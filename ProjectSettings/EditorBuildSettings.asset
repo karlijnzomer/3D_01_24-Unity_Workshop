@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/_BMSLabSource/Scenes/Supermarket 1.unity
+    guid: 88940f3bcdc1efb4aa7d8b449b7f5172
+  - enabled: 0
+    path: Assets/_BMSLabSource/Scenes/Supermarket PA Class baseline scene.unity
+    guid: d0c40ad78ad298045ba0e14b81f8f191
+  - enabled: 0
+    path: Assets/_BMSLabSource/Scenes/Supermarket PA Class treatment group 3.unity
+    guid: ee2ff1242c2bfa94e9065731673a4ee6
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d1e2cc8c5c657e64290ec226752289d3, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 956bb12ebe12406498af372a525a476c, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: eb392c0a08448154583a55f0b0995790, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 4778a8cf8c4785042a9c592a58cad45a, type: 2}

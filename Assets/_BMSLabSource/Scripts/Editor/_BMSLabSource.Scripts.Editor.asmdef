@@ -1,0 +1,20 @@
+{
+    "name": "_BMSLabSource.Scripts.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:6142dc1be7581ca4ab9772f6e2e1b75f",
+        "GUID:48c9f6afdac61634db0e0f241c7d4d51",
+        "GUID:fe685ec1767f73d42b749ea8045bfe43"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
