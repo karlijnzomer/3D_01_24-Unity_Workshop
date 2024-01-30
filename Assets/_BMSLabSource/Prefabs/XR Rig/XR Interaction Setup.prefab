@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 375502576}
   m_Layer: 7
-  m_Name: OffsetForCanvas
-  m_TagString: Untagged
+  m_Name: UIFollowPoint
+  m_TagString: FollowPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2459612035171383603}
   m_Layer: 10
   m_Name: Mango_1xw10k
-  m_TagString: Product
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

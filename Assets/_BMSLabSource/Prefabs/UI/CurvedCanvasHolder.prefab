@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6511694937204114116}
-  - component: {fileID: 6511694937204114123}
   - component: {fileID: 6511694937204114120}
+  - component: {fileID: 6511694937204114123}
+  - component: {fileID: 3061808422385662566}
   m_Layer: 0
   m_Name: CurvedCanvasHolder
   m_TagString: Untagged
@@ -34,6 +35,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6511694937204114120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6511694937204114119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96e85b76ef40d2945934df08d24fb5e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _active: 1
+  _activateOnStart: 1
+  _target: {fileID: 0}
+  Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &6511694937204114123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,7 +78,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   SmoothSpeed: 1.5
---- !u!114 &6511694937204114120
+--- !u!114 &3061808422385662566
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -65,18 +87,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 6511694937204114119}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96e85b76ef40d2945934df08d24fb5e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 2fc1bb71ff7fa584d970d36975fdf776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _active: 1
-  _activateOnStart: 1
-  _target: {fileID: 0}
-  Activated:
+  _debug: 0
+  MainCameraFound:
     m_PersistentCalls:
-      m_Calls: []
-  Deactivated:
+      m_Calls:
+      - m_Target: {fileID: 6511694937204114120}
+        m_TargetAssemblyTypeName: _BMSLabSource.Scripts.Runtime.Utilities.UtilityBase,
+          _BMSLabSource.Scripts.Runtime.Utilities
+        m_MethodName: SetTarget
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _targetTag: FollowPoint
+  FollowPointFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6511694937204114123}
+        m_TargetAssemblyTypeName: _BMSLabSource.Scripts.Runtime.Utilities.UtilityBase,
+          _BMSLabSource.Scripts.Runtime.Utilities
+        m_MethodName: SetTarget
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6511694937331230614
 GameObject:
   m_ObjectHideFlags: 0
