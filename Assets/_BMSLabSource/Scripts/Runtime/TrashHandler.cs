@@ -13,10 +13,11 @@ public class TrashHandler : MonoBehaviour
         {
             Debug.Log(go.name + " touched the trash can.");
 
+            SetKinematic(go.GetComponent<Rigidbody>());
+            ShrinkGameObject(go, 3f);
+
             OnTrashDiscarded?.Invoke(go.name);
 
-            ShrinkGameObject(go, 1.5f);
-            SetKinematic(go.GetComponent<Rigidbody>());
         }
     }
 
@@ -27,7 +28,9 @@ public class TrashHandler : MonoBehaviour
 
     private void SetKinematic(Rigidbody rigidBody)
     {
+        Debug.Log("Start kinematic");
         rigidBody.isKinematic = true;
+        rigidBody.useGravity = false;
         rigidBody.velocity = Vector3.zero;
         rigidBody.angularVelocity = Vector3.zero;
         rigidBody.detectCollisions = false;
@@ -38,7 +41,7 @@ public class TrashHandler : MonoBehaviour
         Vector3 startScale = go.transform.localScale;
         Vector3 startPosition = go.transform.localPosition;
         Vector3 targetScale = Vector3.zero;
-
+        Debug.Log("Shrink start");
         float timeElapsed = 0f;
 
         while (timeElapsed < duration)
