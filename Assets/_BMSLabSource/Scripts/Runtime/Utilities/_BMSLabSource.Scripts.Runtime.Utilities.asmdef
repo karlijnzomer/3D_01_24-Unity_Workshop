@@ -1,7 +1,9 @@
 {
     "name": "_BMSLabSource.Scripts.Runtime.Utilities",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:a4bfb8259f1f17448b03dc4db497fd1c"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
